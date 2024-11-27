@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawsitiveMatch Donation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #ffcc00;
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .donation-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .donation-form h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .donation-form label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .donation-form input[type="text"],
+        .donation-form input[type="email"],
+        .donation-form input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .donation-form input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            font-size: 18px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .donation-form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .info-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .info-section h3 {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .info-section p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .info-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        /* Call-to-action button */
+        .cta-btn {
+            background-color: #ffcc00;
+            color: #333;
+            font-size: 18px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            background-color: #ffb400;
+        }
+
+        /* Donation section */
+        .donation-details {
+            margin-top: 40px;
+            background-color: #ffcc00;
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+
+        .donation-details h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .donation-details p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Support PawsitiveMatch</h1>
+        <p>Your donation helps animals find their forever homes!</p>
+    </header>
+    
+    <!-- Information Section about Donations -->
+    <section class="info-section">
+        <h3>Why Your Donation Matters</h3>
+        <p>Your contribution makes a significant impact in the lives of animals who need love and care. The funds we receive go directly to:</p>
+        <ul>
+            <li>Providing medical care for injured or sick animals</li>
+            <li>Ensuring every animal is vaccinated and spayed/neutered</li>
+            <li>Feeding and providing shelter for abandoned pets</li>
+            <li>Supporting adoption programs to find permanent homes</li>
+        </ul>
+        <p>Every dollar counts. Thank you for making a difference!</p>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="donation-form">
+        <h2>Donate Now</h2>
+        <form action="payment.html" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="amount">Donation Amount ($):</label>
+            <input type="number" id="amount" name="amount" min="1" required>
+            
+            <input type="submit" value="Donate Now">
+        </form>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section class="donation-details">
+        <h2>Make a Lasting Impact Today</h2>
+        <p>Help pets in need by donating. Your generosity brings joy and hope to animals awaiting adoption!</p>
+        <!-- <a href="#donate-now" class="cta-btn">Donate Now and Make a Difference!</a> -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PawsitiveMatch. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
